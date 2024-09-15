@@ -1,5 +1,5 @@
 <template>
-  <div id="MainLayout" class="w-full fixed z-50">
+  <div id="MainLayout" class="flex flex-col min-h-screen w-full fixed z-50">
     <div id="TopMenu" class="w-full bg-[#FAFAFA] border-b md:block hidden">
       <ul
         class="flex items-center justify-end text-xs text-[#333333] font-light px-2 h-10 bg-[#FAFAFA] max-w-[1200px]"
@@ -170,7 +170,7 @@
   <div class="lg:pt-[150px] md:pt-[130px] pt-[80px]" />
   <slot />
 
-  <Footer v-if="!userStore.isLoading" />
+  <Footer v-if="!userStore.isLoading" class="mt-auto" />
 </template>
 
 <script setup>

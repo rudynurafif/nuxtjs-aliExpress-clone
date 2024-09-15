@@ -3,7 +3,7 @@
     <NuxtPage />
   </div>
 
-  <!-- <MenuOverlay
+  <MenuOverlay
       :class="[
         {
           'max-h-[100vh] transition-all duration-200 ease-in visible':
@@ -14,7 +14,7 @@
             !userStore.isMenuOverlay,
         },
       ]"
-    /> -->
+    />
 </template>
 
 <script setup>

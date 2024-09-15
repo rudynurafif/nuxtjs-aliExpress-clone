@@ -42,8 +42,7 @@
         </p>
 
         <p class="px-1 pt-0.5 text-xs text-[#252525]">
-          <!-- {{ product.title.substring(0, 60) }} -->
-          {{ product.title }}
+          {{ product.title.substring(0, 60) }}
         </p>
 
         <p class="px-1 pb-1">
