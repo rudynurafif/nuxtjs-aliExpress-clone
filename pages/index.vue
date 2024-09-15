@@ -23,7 +23,6 @@ let products = ref(null);
 
 onBeforeMount(async () => {
   products.value = await useFetch(`/api/prisma/get-all-product`);
-  setTimeout(() => (userStore.isLoading = false), 100);
-  userStore.isLoading = false;
+  setTimeout(() => userStore.isLoading = false, 1000)
 });
 </script>
